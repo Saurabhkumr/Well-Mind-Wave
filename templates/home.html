@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/normalize.css">
+
+</head>
+
+<body>
+
+    <header class="header bg-blue">
+
+        <nav class="navbar bg-blue">
+            <div class="container flex">
+                <a href="index.html" class="navbar-brand">
+                    <img src="/static/img/wmw1.png" alt="site logo"> 
+                </a>
+                <button type="button" class="navbar-show-btn">
+                    <img src="/static/img/ham-menu-icon.png" alt="">
+                </button>
+
+                <div class="navbar-collapse bg-white">
+                    <button type="button" class="navbar-hide-btn">
+                        <img src="/static/img/close-icon.png" alt="">
+                    </button>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/test" class="nav-link">TAKE A TEST </a>
+                        </li>
+                        <li id="doc-nav" class="nav-item">
+                            <a href="#doc-panel" class="nav-link">DOCTORS</a>
+                        </li>
+
+                    </ul>
+                    <div class="btn-group left signin">
+                        <a href="/log" methods="POST"><button id="loginButton" class="btn btn-white" type="button" >Login</button></a>
+                       
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div id="home" class="header-inner text-white text-center">
+            <div class="container grid">
+                <div class="header-inner-left">
+                    <h1>FROM DESPAIR TO REPAIR<br> <span>Navigating Depression</span></h1>
+                    <p class="lead">WITH COMPASSION</p>
+                    <p class="text text-md"> Depression is a common mental health disorder characterized by persistent feelings of sadness, hopelessness, and a lack of interest or pleasure in daily activities.</p>
+                    <div class="btn-group">
+                        <a href="/aboutdes" class="btn btn-white">Learn More</a>
+                        <a href="/test" class="btn btn-light-blue">Take a Test</a>
+                    </div>
+                </div>
+                <div class="header-inner-right">
+                    <img src="/static/img/front image.png">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about py">
+            <div class="about-inner">
+                <div class="container grid">
+                    <div class="about-left text-center">
+                        <div class="section-head">
+                            <h2>About Us</h2>
+                            <div class="border-line"></div>
+                        </div>
+                        <p class="text text-lg">Welcome to Well Mind Wave, your compassionate companion on the journey to mental well-being.
+
+At Well Mind Wave, we understand that mental health is a vital aspect of overall wellness, and we are dedicated to providing support and resources for those who may be experiencing depression. Our mission is to create a safe and inclusive space where individuals can find information, tools, and assistance in identifying and addressing the challenges associated with depression
+</p>
+                        <a href="/aboutus" class="btn btn-white">Learn More</a>
+                    </div>
+                    <div class="about-right flex">
+                        <div class="img">
+                            <img src="/static/img/about.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="banner-one" class="banner-one text-center">
+            <div class="container text-white">
+                <blockquote class="lead">
+                    <i class="fas fa-quote-left"></i>Your mental health is just as important as your physical health. Recognize the signs, seek support, and begin the journey to healing.<i class="fas fa-quote-right"></i>
+                </blockquote>
+                <small class="text text-sm">- Well Mind Wave</small>
+            </div>
+
+        </section>
+
+      
+
+        <section id="doc-panel" class="doc-panel py">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Our Doctor Panel</h2>
+                </div>
+
+                <div class="doc-panel-inner grid">
+
+
+                    <div class="doc-panel-item">
+                        <div class="img flex">
+                           <a href="/doctor1"><img src="/static/img/doc-1.png" alt=""></a>
+                            <div class="info text-center bg-blue text-white flex">
+                                <p class="lead">Dr. Jonathan Miller</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="doc-panel-item">
+                        <div class="img flex">
+                            <a href="/doctor2"><img src="/static/img/doc-2.png" alt=""></a>
+                            <div class="info text-center bg-blue text-white flex">
+                                <p class="lead">Dr. Adrian Taylor</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="doc-panel-item">
+                        <div class="img flex">
+                            <a href="/doctor3"><img src="/static/img/doc-3.png" alt=""></a>
+                            <div class="info text-center bg-blue text-white flex">
+                                <p class="lead">Dr. Emily Thompson</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            <div class="footer-inner text-white py grid">
+                <div class="footer-item">
+<!--                    <h3 class="footer-head">About Us</h3>-->
+                    <div class="icon">
+                        <img src="/static/img/wmw1.png" alt="">
+                    </div>
+                    <p class="text text-md">Welcome to Well Mind Wave, your compassionate companion on the journey to mental well-being.</p>
+                    <address>
+                        Well Mind Wave<br>
+                        Govind Puri , New Delhi,<br>
+                        India
+                    </address>
+                </div>
+
+                <div class="footer-item">
+                    <h3 class="footer-head">tags</h3>
+                    <ul class="tags-list flex">
+                        <li>medical care</li>
+                        <li>emergency</li>
+                        <li>therapy</li>
+                        <li>medication</li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h3 class="footer-head">Quick Links</h3>
+                    <ul>
+                        <li>
+                            <a href="#home" class="text-white">Home</a>
+                        </li>
+                        <li><a href="#about" class="text-white">About Us</a></li>
+                        <li><a href="/test" class="text-white">Take a test</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h3 class="footer-head">Contact Us</h3>
+
+                    <ul class="appointment-info">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>wellmidwave@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 432943242</span>
+                        </li>
+                      
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-links">
+                <ul class="flex">
+                    <li><a href="#" class="text-white flex"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="text-white flex"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" class="text-white flex"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>

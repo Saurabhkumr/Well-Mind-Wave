@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medilab</title>
+  <meta name="description" content="Medilab a 3 minute depression test">
+  <meta name="keywords" content="depression test using Machine learning">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/normalize.css">
+
+
+</head>
+
+<body>
+
+
+  <nav class="navbar bg-blue">
+    <div class="container flex">
+      <a href="index.html" class="navbar-brand">
+        <img src="/static/img/wmw1.png" alt="site logo">
+      </a>
+      <button type="button" class="navbar-show-btn">
+        <img src="/static/img/ham-menu-icon.png" alt="">
+      </button>
+      <div class="navbar-collapse bg-white">
+        <button type="button" class="navbar-hide-btn">
+          <img src="/static/img/close-icon.png" alt="">
+        </button>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="/" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about" class="nav-link">ABOUT US</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!--service-->
+  <form action="/predictSentiment" method="POST">
+    <section class="sentiment-test">
+      <div class="container">
+        <form action="/predictSentiment" method="POST">
+          <div class="sentiment-form">
+            <h2>Write something about how do you feel.</h2><br>
+            <textarea required="required" id="form10" name="form10" class="md-textarea form-control" rows="8"
+              cols="60"></textarea>
+          </div>
+          <div>
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+          </div>
+            <div class="col-md-12 col-sm-12">
+              <br>
+              <button class="btn btn-white" type="submit">See Result</button>
+            </div>
+        </form><!--End of form-->
+      </div>
+    </section>
+  </form>
+  <!--/ service-->
+
+
+  <!--cta-->
+  <section class="note">
+    <div class="container">
+      <div class="medi-info">
+        <h3>Note : </h3>
+        <p>This information is not designed to replace a physician's independent judgment about the appropriateness or
+          risks of a procedure for a given patient. Always consult your doctor about your medical conditions. Remedy
+          Health Media & PsyCom do not provide medical advice, diagnosis or treatment. </p>
+
+      </div>
+    </div>
+  </section>
+  <!--cta-->
+
+
+
+
+  <script src="/static/js/script.js"></script>
+
+
+
+</body>
+
+</html>
