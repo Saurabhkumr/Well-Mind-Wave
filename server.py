@@ -4,7 +4,6 @@ import os
 
 app = Flask(__name__)
 
-#test change 
 
 @app.route('/')
 def root():
@@ -58,6 +57,12 @@ def aboutus():
 @app.route('/predict', methods=["POST"])
 def predict():
     answers = [request.form[f'a{i}'] for i in range(1, 15)]
+    
+    #changes
+
+    data = {i[0]:i[1] for i in request.form}
+    print(data)
+
 
     # Check if any question is unanswered
     if any(answer is None for answer in answers):
