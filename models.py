@@ -8,13 +8,13 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import confusion_matrix
-
+import os
 
 class Model:
 
     def __init__(self):
         self.name = ''
-        path = 'dataset/cleaned_data.csv'
+        path = os.path.join(os.getcwd(),'dataset','cleaned_data.csv') # this is how path is used 
         df = pd.read_csv(path)
         df = df[['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9', 'q10','q11' ,'q12','q13','q14','q15','class']]
 
